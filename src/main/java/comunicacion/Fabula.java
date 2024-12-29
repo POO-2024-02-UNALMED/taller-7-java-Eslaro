@@ -12,20 +12,20 @@ public class Fabula extends Escrito {
 		this.ensenanzas = ensenanzas;
 		this.interpretacion = interpretacion;
 	}
-	public String getEnsenanzas() {
+	public String getEnsenanza() {
 		return ensenanzas;
 	}
 	public void setEnsenanzas(String ensenanzas) {
 		this.ensenanzas = ensenanzas;
 	}
 	@Override
-	int palabrasTotales(int palabrasPagina) {
+	public int palabrasTotales(int palabrasPagina) {
 		int factor = 1;
 		int palabras = paginas * factor;
 		return palabras;
 	}
 	@Override
-	String interpretacion() {
+	public String interpretacion() {
 		return interpretacion;
 	}
 	public void setInterpretacion(String interpretacion) {
@@ -37,7 +37,7 @@ public class Fabula extends Escrito {
 		texto += this.getTitulo() + "\n";
 		texto += this.getAutor() + "\n";
 		texto += this.getPaginas() + "\n";
-		texto += this.getEnsenanzas() + "\n";
+		texto += this.getEnsenanza() + "\n";
 		texto += this.interpretacion() + "\n";
 		return texto;
 	}

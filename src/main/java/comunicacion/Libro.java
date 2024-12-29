@@ -49,7 +49,7 @@ public class Libro extends Escrito {
 	
 	// Los hermosos metodos
 	@Override
-	int palabrasTotales(int palabrasPagina) {
+	public int palabrasTotales(int palabrasPagina) {
 		int factor = 2;
 		int palabras = paginas * factor;
 		return palabras;

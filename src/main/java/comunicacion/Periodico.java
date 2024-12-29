@@ -20,20 +20,20 @@ public class Periodico extends Escrito{
 	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
-	public String getPremicia() {
+	public String getPrimicia() {
 		return premicia;
 	}
-	public void setPremicia(String premicia) {
+	public void setPrimicia(String premicia) {
 		this.premicia = premicia;
 	}
 	@Override
-	int palabrasTotales(int palabrasPagina) {
+	public int palabrasTotales(int palabrasPagina) {
 		int factor = 10;
 		int palabras = paginas * factor;
 		return palabras;
 	}
 	@Override
-	String interpretacion() {
+	public String interpretacion() {
 		return interpretacion;
 	}
 	@Override
@@ -43,7 +43,7 @@ public class Periodico extends Escrito{
 		texto += this.getAutor() + "\n";
 		texto += this.getPaginas() + "\n";
 		texto += this.getFecha() + "\n";
-		texto += this.getPremicia() + "\n";
+		texto += this.getPrimicia() + "\n";
 		texto += this.interpretacion() + "\n";
 		return texto;
 	}

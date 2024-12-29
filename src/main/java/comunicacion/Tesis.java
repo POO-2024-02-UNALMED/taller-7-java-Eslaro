@@ -37,7 +37,7 @@ public class Tesis extends Escrito {
 	public void setConclusion(String conclusion) {
 		this.conclusion = conclusion;
 	}
-	public String getRerencias() {
+	public String getReferencias() {
 		return referencias;
 	}
 	public void setReferencias(String referencias) {
@@ -63,7 +63,7 @@ public class Tesis extends Escrito {
 		texto += this.getIdea() + "\n";
 		texto += this.getArgumentos() + "\n";
 		texto += this.getConclusion() + "\n";
-		texto += this.getRerencias() + "\n";
+		texto += this.getReferencias() + "\n";
 		texto += this.interpretacion() + "\n";
 		return texto;
 	}
