@@ -57,13 +57,13 @@ public class Tesis extends Escrito {
 	@Override
 	public String toString() {
 		return getOrigen() + "\n" +
-		 getTitulo() + "\n"+
-		 getAutor() + "\n"+
-		 getPaginas() + "\n"+
-		 getIdea() + "\n"+
-		 getArgumentos() + "\n"+
-		 getConclusion() + "\n"+
-		 getReferencias() ;
+		           getTitulo() + "\n" +
+		           getAutor() + "\n" +
+		           getPaginas() + "\n" +
+		           getIdea() + "\n" +
+		           getArgumentos() + "\n" +
+		           getConclusion() + "\n" +
+		           getReferencias();
 		
 	}
 }
