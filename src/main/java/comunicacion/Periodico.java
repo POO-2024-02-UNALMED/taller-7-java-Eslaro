@@ -38,14 +38,13 @@ public class Periodico extends Escrito{
 	}
 	@Override
 	public String toString() {
-		String texto = this.getOrigen() + "\n";
-		texto += this.getTitulo() + "\n";
-		texto += this.getAutor() + "\n";
-		texto += this.getPaginas() + "\n";
-		texto += this.getFecha() + "\n";
-		texto += this.getPrimicia() + "\n";
-		texto += this.interpretacion() + "\n";
-		return texto;
+		return this.getOrigen() + "\n" +
+		this.getTitulo() + "\n" +
+		this.getAutor() + "\n"+
+		this.getPaginas() + "\n"+
+		this.getFecha() + "\n"+
+	    this.getPrimicia();
+		
 	}
 	
 	
