@@ -51,7 +51,8 @@ public class Libro extends Escrito {
 	@Override
 	public int palabrasTotales(int palabrasPagina) {
 		int factor = 2;
-		int palabras = paginas * factor;
+		int total = palabrasPagina * this.getPaginas();
+		int palabras = total * factor;
 		return palabras;
 	}
 
