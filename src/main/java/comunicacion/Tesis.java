@@ -56,15 +56,14 @@ public class Tesis extends Escrito {
 	}
 	@Override
 	public String toString() {
-		String texto = this.getOrigen() + "\n";
-		texto += this.getTitulo() + "\n";
-		texto += this.getAutor() + "\n";
-		texto += this.getPaginas() + "\n";
-		texto += this.getIdea() + "\n";
-		texto += this.getArgumentos() + "\n";
-		texto += this.getConclusion() + "\n";
-		texto += this.getReferencias() + "\n";
-		texto += this.interpretacion() + "\n";
-		return texto;
+		return this.getOrigen() + "\n" +
+		 this.getTitulo() + "\n"+
+		 this.getAutor() + "\n"+
+		 this.getPaginas() + "\n"+
+		 this.getIdea() + "\n"+
+		 this.getArgumentos() + "\n"+
+		 this.getConclusion() + "\n"+
+		 this.getReferencias() + "\n";
+		
 	}
 }
