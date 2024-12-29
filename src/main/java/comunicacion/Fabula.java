@@ -21,7 +21,8 @@ public class Fabula extends Escrito {
 	@Override
 	public int palabrasTotales(int palabrasPagina) {
 		int factor = 1;
-		int palabras = palabrasPagina * factor;
+		int total = palabrasPagina * paginas;
+		int palabras = total * factor;
 		return palabras;
 	}
 	@Override
